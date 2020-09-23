@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<asmv1:assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<asmv1:assembly
+    manifestVersion="1.0"
+    xmlns="urn:schemas-microsoft-com:asm.v1"
+    xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+    xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+    xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
   <assemblyIdentity version="1.0.0.0" name="MyApplication.app" />
   <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
     <security>
@@ -24,6 +31,11 @@
       </applicationRequestMinimum>
     </security>
   </trustInfo>
+  <asmv3:application>
+    <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
+      <dpiAware>true/PM</dpiAware>
+    </asmv3:windowsSettings>
+  </asmv3:application>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- 이 응용 프로그램을 사용할 수 있는 모든 Windows 버전의 목록입니다. 가장 잘 호환되는 환경을 Windows가 자동으로 선택합니다.-->

@@ -42,7 +42,7 @@ Function .onInit
   ;previous version or `Cancel` to cancel this upgrade." \
 
   MessageBox MB_OKCANCEL|MB_ICONEXCLAMATION \
-  "${PRODUCT_NAME}은 이미 설치되어 있습니다. $\n$\n`OK`를 클릭하면 \
+  "${PRODUCT_NAME} 은 이미 설치되어 있습니다. $\n$\n`OK`를 클릭하면 \
   업그레이드를 진행 합니다. `Cancel`을 클릭하면 설치가 취소 됩니다." \
   IDOK uninst
   Abort
@@ -90,7 +90,7 @@ Section "PlatformFarm MiniDic Install" SEC01
   File "${INSTALL_FILES_PATH}\libcef.dll"
   File "${INSTALL_FILES_PATH}\libEGL.dll"
   File "${INSTALL_FILES_PATH}\libGLESv2.dll"
-  File "${INSTALL_FILES_PATH}\natives_blob.bin"
+  ; File "${INSTALL_FILES_PATH}\natives_blob.bin"
   File "${INSTALL_FILES_PATH}\PlatformFarm.ShareWare.MiniDic.exe"
   File "${INSTALL_FILES_PATH}\PlatformFarm.ShareWare.MiniDic.exe.config"
   File "${INSTALL_FILES_PATH}\README.txt"

@@ -113,6 +113,7 @@
             this.Text = "미니사전";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DicForm_FormClosing);
             this.Load += new System.EventHandler(this.DicForm_Load);
+            this.Shown += new System.EventHandler(this.DicForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.contextMenuTray.ResumeLayout(false);
             this.ResumeLayout(false);

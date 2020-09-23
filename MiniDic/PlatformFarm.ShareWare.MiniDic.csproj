@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PlatformFarm.ShareWare.MiniDic</RootNamespace>
     <AssemblyName>PlatformFarm.ShareWare.MiniDic</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -107,6 +107,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SpellCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellCheckForm.Designer.cs">
+      <DependentUpon>SpellCheckForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DicForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SpellCheckForm.resx">
+      <DependentUpon>SpellCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DicForm.resx">
       <DependentUpon>DicForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,19 +186,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="cef.redist.x64">
-      <Version>75.1.14</Version>
+      <Version>84.4.1</Version>
     </PackageReference>
     <PackageReference Include="cef.redist.x86">
-      <Version>75.1.14</Version>
+      <Version>84.4.1</Version>
     </PackageReference>
     <PackageReference Include="CefSharp.Common">
-      <Version>75.1.142</Version>
+      <Version>84.4.10</Version>
     </PackageReference>
     <PackageReference Include="CefSharp.WinForms">
-      <Version>75.1.142</Version>
+      <Version>84.4.10</Version>
     </PackageReference>
     <PackageReference Include="log4net">
-      <Version>2.0.8</Version>
+      <Version>2.0.9</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

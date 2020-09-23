@@ -74,7 +74,7 @@ namespace PlatformFarm.ShareWare.MiniDic
             Keys k = Keys.D | Keys.Control | Keys.Shift;
             RegisterHotKey(this, k);
 
-            Keys k2 = Keys.B | Keys.Control | Keys.Shift;
+            Keys k2 = Keys.C | Keys.Control | Keys.Shift;
             RegisterHotKey(this, k2);
 
             string browseUrl = ConfigurationManager.AppSettings["browseUrl"];
@@ -96,7 +96,7 @@ namespace PlatformFarm.ShareWare.MiniDic
             
         }
 
-        private static bool _systemShutdown = false;
+        public static bool _systemShutdown = false;
         
         protected override void WndProc(ref System.Windows.Forms.Message m)
         {
@@ -117,6 +117,14 @@ namespace PlatformFarm.ShareWare.MiniDic
                         this.TopMost = true;
                         this.TopMost = false;
                         this.Focus();
+                    }
+
+                    if ((int)Keys.C == keyCode)
+                    {
+                        _spellCheckForm.Visible = true;
+                        _spellCheckForm.TopMost = true;
+                        _spellCheckForm.TopMost = false;                        
+                        _spellCheckForm.Focus();
                     }
                 }
             }
@@ -186,7 +194,15 @@ namespace PlatformFarm.ShareWare.MiniDic
             {
                 this.Visible = true;
             }
-        }        
+        }
+
+        private SpellCheckForm _spellCheckForm = new SpellCheckForm();
+
+        private void DicForm_Shown(object sender, EventArgs e)
+        {
+            _spellCheckForm.Show();
+            _spellCheckForm.Visible = false;
+        }
     }
 
     public class JsDialogHandler : IJsDialogHandler
