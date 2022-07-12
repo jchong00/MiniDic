@@ -195,7 +195,7 @@
       <Version>98.1.210</Version>
     </PackageReference>
     <PackageReference Include="CefSharp.WinForms">
-      <Version>84.4.10</Version>
+      <Version>98.1.210</Version>
     </PackageReference>
     <PackageReference Include="log4net">
       <Version>2.0.10</Version>
